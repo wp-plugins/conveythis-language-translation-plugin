@@ -24,12 +24,59 @@ Author URI: http://www.conveythis.com
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
 class ConveyThisWidget {
-	//=====================================
-	//Want stats with your ConveyThis plugin? 
-	//Put your ConveyThis username in this variable 
+	//==========================================
+	// Want stats with your ConveyThis plugin? 
+	// Replace 'wordpress' with your ConveyThis
+	// username.
+	
+	// i.e. if your name is testing, the line
+	// should read:
+	// var $conveythis_username = 'testing';
+	
+	// Also, if your page is not written in
+	// English, replace your language below.
+	// The possible language list is:
+	/*  "Arabic"
+		"Brazilian Portuguese"
+		"Bulgarian"
+		"Chinese"
+		"Chinese-simp"
+		"Chinese-trad"
+		"Croatian"
+		"Czech"
+		"Danish"
+		"Dutch"
+		"English"
+		"Finnish"
+		"French"
+		"German"
+		"Greek"
+		"Hindi"
+		"Hungarian"
+		"Icelandic"
+		"Italian"
+		"Japanese"
+		"Korean"
+		"Norwegian"
+		"Polish"
+		"Portuguese"
+		"Romanian"
+		"Russian"
+		"Serbian"
+		"Slovenian"
+		"Spanish"
+		"Swedish"
+		"Welsh"
+	*/
+	// i.e. if your page is written in Spanish,
+	// then the line:
+	// var $conveythis_source = 'English';
+	// Should be changed to:
+	// var $conveythis_source = 'Spanish';
 	
 	var $conveythis_username = 'wordpress';
-	//=====================================
+	var $conveythis_source = 'English';
+	//==========================================
 	
 	// Constructor
 	function ConveyThisWidget(){
@@ -46,7 +93,7 @@ class ConveyThisWidget {
 	function getConveyThisCode($link) {
 		$convey_code = '<script type="text/javascript">';
 		$convey_code .=	'convey_url      = "'.$link.'";';
-		$convey_code .=	'convey_source   = "English";';
+		$convey_code .=	'convey_source   = "'.$this->conveythis_source.'";';
 		$convey_code .=	'convey_user     = "'.$this->conveythis_username.'";';
 		$convey_code .=	'convey_type     = 1;';
 		$convey_code .=	'</script>';
@@ -85,6 +132,4 @@ class ConveyThisWidget {
 }
 
 $convey_this &= new ConveyThisWidget();
-// hook it in?
-//add_action('wp_footer', 'displayConveyThis');
 ?>
