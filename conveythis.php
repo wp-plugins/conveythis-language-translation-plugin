@@ -2,7 +2,7 @@
 /*
 Plugin Name: ConveyThis Language Translation Plugin
 Plugin URI: http://www.conveythis.com
-Description: Allows your users translate your blog into many different languages. The button is added to the bottom of every post.
+Description: Allows your users to translate your blog into many different languages. The button is added to the bottom of every post.
 Author: ConveyThis.com
 Version: 1.0
 Author URI: http://www.conveythis.com
