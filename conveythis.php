@@ -92,15 +92,11 @@ class ConveyThisWidget {
 	// Get the actual button code
 	function getConveyThisCode($link) {
 		$convey_code = '<script type="text/javascript">';
-		$convey_code .=	'convey_url      = "'.$link.'";';
 		$convey_code .=	'convey_source   = "'.$this->conveythis_source.'";';
 		$convey_code .=	'convey_user     = "'.$this->conveythis_username.'";';
-		$convey_code .=	'convey_type     = 1;';
 		$convey_code .=	'</script>';
-		$convey_code .=	'<a href="http://www.conveythis.com/" title="free translation" onmouseover="javacript:conveythis_show(this); conveythis_stop_timer();" onmouseout="javascript:conveythis_start_timer();" onclick="javascript:conveythis_prepWindow(this); return false;" >';
-		$convey_code .=	'<script type="text/javascript" src="http://www.conveythis.com/javascript/conveythis_v2-1.js"></script>';
-		$convey_code .=	'</a>';
-        
+		$convey_code .=	'<a href="http://www.translation-services-usa.com/" id="conveythis_image" title="translation services" onmouseover="conveythis_show(this)" onmouseout="conveythis_start_timer()" onclick="return conveythis_prepWindow(this)" ><img src="http://e1.conveythis.com/kern_e1/images/translate1.gif" style="border-style: none;" /></a>';
+		$convey_code .=	'<script type="text/javascript" src="http://e1.conveythis.com/kern_e1/javascript/e1_1.js"></script>';        
         return $convey_code;
 	}
 	
