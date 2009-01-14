@@ -8,8 +8,8 @@ Allows your users to translate your blog into many different languages. The butt
 
 == Description ==
 
-Free Translation widget provided by [ConveyThis](http://www.conveythis.com/ "free translation"). ConveyThis combines Google Translator 
-Live Translator, Babel Fish, and many other people online translators into one small, easy to use button. 
+Free Translation widget provided by [ConveyThis](http://www.conveythis.com/ "free translation"). ConveyThis combines Google Translator, 
+Live Translator, Babel Fish, and many other online translators into one small, easy to use button. 
 Once installed, the button will appear at the bottom of every post on the main page, as well as at the bottom of 
 the individual posts.
 
