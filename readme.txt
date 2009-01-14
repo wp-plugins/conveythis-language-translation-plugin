@@ -2,6 +2,7 @@
 Contributors: conveythis
 Tags: conveythis, translation, free, translator
 Tested up to: 2.6
+Stable tag: 2.0
 
 Allows your users to translate your blog into many different languages. The button is added to the bottom of every post.
 
