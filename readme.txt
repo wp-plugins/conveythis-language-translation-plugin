@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== ConveyThis Language Translation Plugin ===
 Contributors: conveythis
 Tags: conveythis, translation, free, translator
 Tested up to: 2.6
