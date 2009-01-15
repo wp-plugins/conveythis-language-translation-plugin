@@ -21,43 +21,43 @@ Please do not modify the code or link information, or the button may not display
 
 1. Upload conveythis-language-translation-plugin to the /wp-content/plugins/ directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. If you have registered an account at [ConveyThis](http://www.conveythis.com/ "free translation"), you can enter your username to track your 
-statistics. To do this, open conveythis.php change the line "var $conveythis_username = 'wordpress';" to include your username. ex. 
+1. If you have registered an account at [ConveyThis](http://www.conveythis.com/login.php "free translation"), you can enter your username to track 
+statistics. To do this, open conveythis.php and change the line "var $conveythis_username = 'wordpress';" to include your username. ex. 
 "var $conveythis_username = 'username_goes_here';"
-1. Also, if your language is not in English, you must change the line "var $conveythis_source = 'English';" to the language your page is in. 
+1. Also, if your website is not in English, you must change the line "var $conveythis_source = 'English';" to the correct language. 
 ex: for a Spanish page, change the line to "var $conveythis_username = 'Spanish';" Available languages include: 
 
-"Arabic"
-"Brazilian Portuguese"
-"Bulgarian"
-"Chinese"
-"Chinese-simp"
-"Chinese-trad"
-"Croatian"
-"Czech"
-"Danish"
-"Dutch"
-"English"
-"Finnish"
-"French"
-"German"
-"Greek"
-"Hindi"
-"Hungarian"
-"Icelandic"
-"Italian"
-"Japanese"
-"Korean"
-"Norwegian"
-"Polish"
-"Portuguese"
-"Romanian"
-"Russian"
-"Serbian"
-"Slovenian"
-"Spanish"
-"Swedish"
-"Welsh"
+* Arabic
+* Brazilian Portuguese
+* Bulgarian
+* Chinese
+* Chinese-simp
+* Chinese-trad
+* Croatian
+* Czech
+* Danish
+* Dutch
+* English
+* Finnish
+* French
+* German
+* Greek
+* Hindi
+* Hungarian
+* Icelandic
+* Italian
+* Japanese
+* Korean
+* Norwegian
+* Polish
+* Portuguese
+* Romanian
+* Russian
+* Serbian
+* Slovenian
+* Spanish
+* Swedish
+* Welsh
 
 == Frequently Asked Questions ==
 
