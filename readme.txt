@@ -2,7 +2,7 @@
 Contributors: conveythis
 Tags: conveythis, free, website, blog, translate, translation, translator
 Tested up to: 2.6
-Stable tag: 2.1
+Stable tag: 2.2
 
 Allows your users to translate your blog into many different languages. The button is added to the bottom of every post.
 
@@ -30,6 +30,7 @@ ex: for a Spanish page, change the line to "var $conveythis_username = 'Spanish'
 * Arabic
 * Brazilian Portuguese
 * Bulgarian
+* Catalan
 * Chinese
 * Chinese-simp
 * Chinese-trad
@@ -38,26 +39,34 @@ ex: for a Spanish page, change the line to "var $conveythis_username = 'Spanish'
 * Danish
 * Dutch
 * English
+* Filipino
 * Finnish
 * French
 * German
 * Greek
+* Hebrew
 * Hindi
 * Hungarian
 * Icelandic
+* Indonesian
 * Italian
 * Japanese
 * Korean
+* Latvian
+* Lithuanian
 * Norwegian
 * Polish
 * Portuguese
 * Romanian
 * Russian
 * Serbian
+* Slovak
 * Slovenian
 * Spanish
 * Swedish
+* Ukranian
 * Welsh
+* Vietnamese
 
 == Frequently Asked Questions ==
 

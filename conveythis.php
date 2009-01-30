@@ -4,7 +4,7 @@ Plugin Name: ConveyThis Language Translation Plugin
 Plugin URI: http://www.conveythis.com
 Description: Allows your users to translate your blog into many different languages. The button is added to the bottom of every post.
 Author: ConveyThis.com
-Version: 2.1
+Version: 2.2
 Author URI: http://www.conveythis.com
 */
 /*  Copyright 2008  ConveyThis.com  (email : mike@conveythis.com)
@@ -36,9 +36,11 @@ class ConveyThisWidget {
 	// Also, if your page is not written in
 	// English, replace your language below.
 	// The possible language list is:
-	/*  "Arabic"
+	/*	
+		"Arabic"
 		"Brazilian Portuguese"
 		"Bulgarian"
+		"Catalan"
 		"Chinese"
 		"Chinese-simp"
 		"Chinese-trad"
@@ -47,26 +49,34 @@ class ConveyThisWidget {
 		"Danish"
 		"Dutch"
 		"English"
+		"Filipino"
 		"Finnish"
 		"French"
 		"German"
 		"Greek"
+		"Hebrew"
 		"Hindi"
 		"Hungarian"
 		"Icelandic"
+		"Indonesian"
 		"Italian"
 		"Japanese"
 		"Korean"
+		"Latvian"
+		"Lithuanian"
 		"Norwegian"
 		"Polish"
 		"Portuguese"
 		"Romanian"
 		"Russian"
 		"Serbian"
+		"Slovak"
 		"Slovenian"
 		"Spanish"
 		"Swedish"
+		"Ukranian"
 		"Welsh"
+		"Vietnamese"
 	*/
 	// i.e. if your page is written in Spanish,
 	// then the line:
@@ -84,12 +94,16 @@ class ConveyThisWidget {
 	}
 	
 	function codeToContent($content){  
+		// Add nothing to RSS feed.
+		if (is_feed()) return $content;
+		// Add nothing to categories.
+		if (is_category()) return $content;
+		// Get the link.
 		$link  = urlencode(get_permalink());
-		// alert the link here, to test.
 		return $content.$this->getConveyThisCode($link);
 	}
 	
-	// Get the actual button code
+	// Get the actual button code.
 	function getConveyThisCode($link) {
 		$convey_code = '<script type="text/javascript">';
 		$convey_code .=	'convey_source   = "'.$this->conveythis_source.'";';
