@@ -8,14 +8,12 @@ Allows your users to translate your blog into many different languages. The butt
 
 == Description ==
 
-A free translation button provided by [ConveyThis](http://www.conveythis.com/ "free translation") allowing visitors to translate 
-your website into their native language. ConveyThis combines Google Translator, Live Translator, Babel Fish, and many other online 
+A free <b>translation</b> button provided by [ConveyThis](http://www.conveythis.com/ "free translation") allowing visitors to translate 
+your website into over 40 languages. ConveyThis combines Google Translator, Live Translator, Babel Fish, and many other online 
 translators into one small, easy to use button. Once installed, the button will appear at the bottom of every post on the main page, 
 as well as at the bottom of the individual posts.
 
-ConveyThis supports over 30 languages, and we will be adding more soon.
-
-Please do not modify the code or link information, or the button may not display properly.
+ConveyThis supports over 40 languages, and we will be adding more soon.
 
 == Installation ==
 
