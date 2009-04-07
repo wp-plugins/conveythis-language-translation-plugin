@@ -1,6 +1,6 @@
 === ConveyThis Translator with Translation Statistics ===
 Contributors: conveythis
-Tags: translation, translator, translate, conveythis, free, website, blog, babelfish, google translate, promt, freetranslations, freetranslation
+Tags: translation, translator, babelfish, conveythis, free, website, blog, translate, google translate, promt, freetranslations, freetranslation
 Tested up to: 2.6
 Stable tag: 2.2
 
