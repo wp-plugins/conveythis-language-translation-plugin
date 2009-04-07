@@ -1,6 +1,6 @@
-=== ConveyThis Language Translation Plugin ===
+=== ConveyThis Translator with Translation Statistics ===
 Contributors: conveythis
-Tags: conveythis, free, website, blog, translate, translation, translator
+Tags: translation, translator, translate, conveythis, free, website, blog, babelfish, google translate
 Tested up to: 2.6
 Stable tag: 2.2
 
