@@ -1,4 +1,4 @@
-=== ConveyThis Translator with Translation Statistics ===
+=== ConveyThis Blog Translator ===
 Contributors: conveythis
 Tags: translation, translator, babelfish, conveythis, free, website, blog, translate, google translate, promt, freetranslations, freetranslation
 Tested up to: 2.6
@@ -80,4 +80,3 @@ effort to keep the translator's available language list as up to date as possibl
 
 1. The button on a sample post.
 2. The open menu on a sample post.
-3. A sample translation report.
