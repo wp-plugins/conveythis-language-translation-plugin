@@ -2,7 +2,7 @@
 Contributors: conveythis
 Tags: translation, translator, babelfish, conveythis, free, website, blog, translate, google translate, promt, freetranslations, freetranslation
 Tested up to: 2.6
-Stable tag: 2.2
+Stable tag: 2.3
 
 Allows your users to translate your blog into many different languages. The button is added to the bottom of every post.
 
@@ -19,10 +19,7 @@ ConveyThis supports over 40 languages, and we will be adding more soon.
 
 1. Upload conveythis-language-translation-plugin to the /wp-content/plugins/ directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. If you have registered an account at [ConveyThis](http://www.conveythis.com/login.php "free translation"), you can enter your username to track 
-statistics. To do this, open conveythis.php and change the line "var $conveythis_username = 'wordpress';" to include your username. ex. 
-"var $conveythis_username = 'username_goes_here';"
-1. Also, if your website is not in English, you must change the line "var $conveythis_source = 'English';" to the correct language. 
+1. If your website is not in English, you must open conveythis.php and change the line "var $conveythis_source = 'English';" to the correct language. 
 ex: for a Spanish page, change the line to "var $conveythis_username = 'Spanish';" Available languages include: 
 
 * Arabic
