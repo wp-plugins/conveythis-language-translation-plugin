@@ -4,10 +4,10 @@ Plugin Name: ConveyThis Language Translation Plugin
 Plugin URI: http://www.conveythis.com
 Description: Allows your users to translate your blog into many different languages. The button is added to the bottom of every post.
 Author: ConveyThis.com
-Version: 2.3
+Version: 2.3.1
 Author URI: http://www.conveythis.com
 */
-/*  Copyright 2008  ConveyThis.com  (email : mike@conveythis.com)
+/*  Copyright 2008  ConveyThis.com  (email : alex.buran@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -95,12 +95,15 @@ class ConveyThisWidget {
 	}
 	
 	// Get the actual button code.
+	
 	function getConveyThisCode($link) {
 		$convey_code = '<script type="text/javascript">';
-		$convey_code .=	'convey_source   = "'.$this->conveythis_source.'";';
+		$convey_code .=	'convey_src   = "'.$this->conveythis_source.'";';
 		$convey_code .=	'</script>';
-		$convey_code .=	'<a href="http://www.translation-services-usa.com/" id="conveythis_image" title="translation services" onmouseover="conveythis_show(this)" onmouseout="conveythis_start_timer()" onclick="return conveythis_prepWindow(this)" ><img src="http://no-stats.conveythis.com/kern_e2/images/translate1.gif" style="border-style: none;" /></a>';
-		$convey_code .=	'<script type="text/javascript" src="http://no-stats.conveythis.com/kern_e2/javascript/e2_1.js"></script>';        
+		$convey_code .=	'<div class="conveythis">
+			<a class="conveythis_drop" title="translation" href="http://www.translation-services-usa.com/"><span class="conveythis_button_1">translation</span></a>
+		</div>';
+		$convey_code .=	'<script type="text/javascript" src="http://no-stats.conveythis.com/kern_e2/_v_2_3/javascript/e2_3.js"></script>';        
         return $convey_code;
 	}
 	

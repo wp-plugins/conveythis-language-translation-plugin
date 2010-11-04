@@ -1,8 +1,8 @@
 === ConveyThis Blog Translator ===
 Contributors: conveythis
 Tags: translation, translator, babelfish, conveythis, free, website, blog, translate, google translate, promt, freetranslations, freetranslation
-Tested up to: 2.6
-Stable tag: 2.3
+Tested up to: 3.0.1
+Stable tag: 2.4
 
 Allows your users to translate your blog into many different languages. The button is added to the bottom of every post.
 
