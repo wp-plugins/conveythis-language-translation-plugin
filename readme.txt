@@ -2,18 +2,18 @@
 Contributors: conveythis
 Tags: translation, translator, babelfish, conveythis, free, website, blog, translate, google translate, promt, freetranslations, freetranslation
 Tested up to: 3.0.1
-Stable tag: 2.4
+Stable tag: 2.5
 
 Allows your users to translate your blog into many different languages. The button is added to the bottom of every post.
 
 == Description ==
 
 A free **translation** button provided by [ConveyThis](http://www.conveythis.com/ "free translation") allowing visitors to **translate** 
-your website into over 40 languages. ConveyThis combines Google Translator, Live Translator, Babel Fish, and many other online 
-**translators** into one small, easy to use button. Once installed, the button will appear at the bottom of every post on the main page, 
-as well as at the bottom of the individual posts.
+your website into over 50 languages. ConveyThis is powered by Google Translate and combines all it's translation functionality into one 
+small, easy to use button. Once installed, the button will appear at the bottom of every post on the main page, as well as at the bottom 
+of the individual posts.
 
-ConveyThis supports over 40 languages, and we will be adding more soon.
+ConveyThis supports over 50 languages, and more will be added soon.
 
 == Installation ==
 
@@ -67,12 +67,12 @@ ex: for a Spanish page, change the line to "var $conveythis_username = 'Spanish'
 
 = When will you be adding support for new languages? =
 
-Since the button only uses other popular online translators, we have no control of when new languages will be available. Once a translator 
+Since the button only uses Google Translate, we have no control of when new languages will be available. Once Google 
 does add a new language, we try to add support for that language as quickly as possible.
 
-= A translator added a new language, and it's not available through ConveyThis. Why is that? =
+= Google Translate added a new language, and it's not available through ConveyThis. Why is that? =
 
-When a translator adds a new language, it is not automatically available through ConveyThis. This is because we must make internal changes 
+When Google Translate adds a new language it is not automatically available through ConveyThis. This is because we must make internal changes 
 to our program telling it the language is available and how to handle it. Also, we need to add a flag image for that language. We make every 
 effort to keep the translator's available language list as up to date as possible.
 

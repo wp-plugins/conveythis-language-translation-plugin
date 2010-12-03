@@ -1,13 +1,13 @@
 <?php
 /*
 Plugin Name: ConveyThis Language Translation Plugin
-Plugin URI: http://www.conveythis.com
+Plugin URI: http://www.conveythis.com/
 Description: Allows your users to translate your blog into many different languages. The button is added to the bottom of every post.
 Author: ConveyThis.com
-Version: 2.4
-Author URI: http://www.conveythis.com
+Version: 2.5
+Author URI: http://www.conveythis.com/
 */
-/*  Copyright 2008  ConveyThis.com  (email : alex.buran@gmail.com)
+/*  Copyright 2010  ConveyThis.com  (email : alex.buran@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -27,56 +27,18 @@ class ConveyThisWidget {
 	//==========================================
 	// If your page is not written in
 	// English, replace your language below.
-	// The possible language list is:
-	/*	
-		"Arabic"
-		"Brazilian Portuguese"
-		"Bulgarian"
-		"Catalan"
-		"Chinese"
-		"Chinese-simp"
-		"Chinese-trad"
-		"Croatian"
-		"Czech"
-		"Danish"
-		"Dutch"
-		"English"
-		"Filipino"
-		"Finnish"
-		"French"
-		"German"
-		"Greek"
-		"Hebrew"
-		"Hindi"
-		"Hungarian"
-		"Icelandic"
-		"Indonesian"
-		"Italian"
-		"Japanese"
-		"Korean"
-		"Latvian"
-		"Lithuanian"
-		"Norwegian"
-		"Polish"
-		"Portuguese"
-		"Romanian"
-		"Russian"
-		"Serbian"
-		"Slovak"
-		"Slovenian"
-		"Spanish"
-		"Swedish"
-		"Ukranian"
-		"Welsh"
-		"Vietnamese"
-	*/
-	// i.e. if your page is written in Spanish,
+	// You must use the language CODE of your 
+	// website, not the full language name.
+	// For a full list of usable languages and 
+	// codes, please visit: 
+	// http://code.google.com/apis/language/translate/v1/reference.html#LangNameArray
+	// e.g. if your page is written in Spanish,
 	// then the line:
-	// var $conveythis_source = 'English';
+	// var $conveythis_source = 'en';
 	// Should be changed to:
-	// var $conveythis_source = 'Spanish';
+	// var $conveythis_source = 'es';
 	
-	var $conveythis_source = 'English';
+	var $conveythis_source = 'en';
 	//==========================================
 	
 	// Constructor
@@ -86,24 +48,29 @@ class ConveyThisWidget {
 	
 	function codeToContent($content){  
 		// Add nothing to RSS feed.
-		if (is_feed()) return $content;
+		if (is_feed()) {
+			return $content;
+		}
+		
 		// Add nothing to categories.
-		if (is_category()) return $content;
-		// Get the link.
+		if (is_category()) {
+			return $content;
+		}
+		
+		// Add the link to the content.
 		$link  = urlencode(get_permalink());
 		return $content.$this->getConveyThisCode($link);
 	}
 	
 	// Get the actual button code.
-	
 	function getConveyThisCode($link) {
-		$convey_code = '<script type="text/javascript">';
-		$convey_code .=	'convey_src   = "'.$this->conveythis_source.'";';
-		$convey_code .=	'</script>';
-		$convey_code .=	'<div class="conveythis">
-			<a class="conveythis_drop" title="translation" href="http://www.translation-services-usa.com/"><span class="conveythis_button_1">translation</span></a>
-		</div>';
-		$convey_code .=	'<script type="text/javascript" src="http://no-stats.conveythis.com/kern_e2/_v_2_3/javascript/e2_3.js"></script>';        
+		$convey_code	= 	sprintf('<script type="text/javascript">');
+		$convey_code	.=	sprintf('var conveythis_src = "%s";', $this->conveythis_source);
+		$convey_code	.=	sprintf('</script>');
+		$convey_code	.=	sprintf('<div class="conveythis"><a class="conveythis_drop" title="translation" href="http://www.translation-services-usa.com/"><span class="conveythis_button_1">translation</span></a></div>');
+		$convey_code	.=	sprintf('<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>');
+		$convey_code	.=	sprintf('<script type="text/javascript" src="http://s1.conveythis.com/e2/_v_3/javascript/e3.js"></script>');
+		
         return $convey_code;
 	}
 	
